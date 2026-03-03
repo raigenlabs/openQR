@@ -839,6 +839,7 @@ main {
         height: auto;
         min-height: 460px;
         border-radius: 16px;
+        overflow: visible;
     }
 
     .qr-layout {
@@ -873,11 +874,14 @@ main {
 
     .dot-popover,
     .color-popover {
-        right: auto;
+        position: fixed;
         left: 50%;
         top: auto;
-        bottom: calc(100% + 8px);
-        transform: translateX(-50%) translateY(-4px);
+        bottom: 80px;
+        right: auto;
+        transform: translateX(-50%) translateY(4px);
+        z-index: 9999;
+        width: 180px;
     }
 
     .dot-popover.open,
